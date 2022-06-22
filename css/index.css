@@ -9,6 +9,8 @@ body{
     
 }
 .naveg{
+    width: 70%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     background-color: transparent;
@@ -17,12 +19,9 @@ body{
     align-items: center;
 
 }
-.title h2{
+.titulo{
    font-size: 25px; 
-}
-nav{
-    display: flex;
-
+   color: #FEED01;
 }
 .naveg li{
     display:inline;
@@ -30,7 +29,7 @@ nav{
     padding: 20px;
 
 }
-.naveg a{
+.naveg li a{
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
@@ -38,6 +37,16 @@ nav{
     text-decoration: none;
     color: white;
 }
+.btn_menu{
+    display: none;
+    cursor: pointer;
+}
+ul.show{
+    top:65px;
+}
+
+
+
 .sobreMi{
     align-items: center;
     width: 70%;
@@ -275,14 +284,53 @@ a{
 
 /*responsive*/
 
-@media(max-width:1750px){
+@media(max-width:1770px){
     .sobreMi{
-        display: flex;
-        justify-content: center;
+        height: auto;
+    }
+    .puesto{
+        width: 330px;
+        margin-bottom: 30px;
+        margin-left: 4rem;
+    }
+    #sobreContacto{
+        width: 300px;
+    }
+    #proyecto{
+        width: 380px;
+        height: 280px;
     }
 }
-@media(max-width:767px){
+@media(max-width:952px){
+    .titulo{
+        font-size: 20px;
+        
+    }
+    .naveg li a{
+        font-size: 9px;
+    }
+}
+@media(max-width:850px){
+    .titulo{
+        margin-top: 23rem;
+        font-size: 40px;
+    }
+    .naveg{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .naveg li{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid #fff;
+        text-align: center;
+    }
+    .naveg li a{
+        font-size: 15px;
+    }
     .sobreMi{
+        margin-top: 360px;
         height: auto;
     }
     .nombre{
@@ -290,6 +338,7 @@ a{
     }
     .puesto{
         width: 280px;
+        margin-bottom: 30px;
     }
     .parrafo {
         width: 100%;
@@ -306,8 +355,43 @@ a{
         width: 250px;
     }
     #proyecto{
-        width: 300px;
+        width: 280px;
         height: 200px;
     }
-
+}
+@media(max-width:575px){
+    .nombre{
+        width: 300px;
+    }
+    .puesto{
+        width: 240px;
+        margin-left:2rem;
+    }
+    #sobreContacto{
+        width: 200px;
+    }
+    
+}
+@media(max-width:415px){
+    .nombre{
+        width: 240px;
+    }
+    .puesto{
+        width: 180px;
+        margin-left:2rem;
+    }
+    #sobreContacto{
+        width: 200px;
+    }
+    .proyectos{
+        height: auto;
+    }
+    #proyecto{
+        width: 180px;
+        height: 90px;
+    }
+    .fotoInstitucion{
+        width: 180px;
+        height: 90px;
+    }
 }

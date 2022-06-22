@@ -10,13 +10,8 @@
 </head>
 <body>
     <a name="inicio"></a>
-    <header class="naveg">
-            <div class="title">
-                <h2 style="color: yellow;">
-                    < luis tang  / >
-                </h2>
-            </div>
-            <nav>
+            <nav class="naveg">
+                <label class="titulo"> &lt;luistang/&gt;</label>
                 <ul>
                     <li><a href="#sobremi">Sobre mi</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
@@ -24,11 +19,9 @@
                     <li><a href="#hobbies">Hobbies</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="https://docs.google.com/document/d/17r-p2Tj__OGSP9gcFYhXVXBwpEBbpXH0SJPv-LbWGkI/edit?usp=sharing" target="_blank">Mi Curriculum</a></li>
+                    <li><a href="https://docs.google.com/document/d/17r-p2Tj__OGSP9gcFYhXVXBwpEBbpXH0SJPv-LbWGkI/edit?usp=sharing" target="_blank">Curriculum</a></li>
                 </ul>
-            </nav>
-            
-    </header>
+            </nav>    
     <main>
         <a name="sobremi"></a>
     <section class="sobreMi">
@@ -169,7 +162,7 @@
         <div style="text-align: center;">
         <img id="sobreContacto" src="img/icons/contacto.png">
         </div>
-        <form id="form-adicionar" style="margin: 0 auto; width: 50%; ">
+        <form style="margin: 0 auto; width: 50%; ">
             <div class="grupo">
                 <label for="nombre">Nombre</label>
                 <input id="nombre" name="nombre" type="text">
@@ -184,7 +177,7 @@
             </div>
             <div class="grupo">
                 <label for="mensaje">Mensaje</label>
-                <input id="mensaje" type="text" style="height: 4rem;">
+                <textarea id="mensaje" type="text" style="height: 4rem; width: 103%; resize: none;"></textarea>
             </div>
             <button id="adicionar-paciente" class="boton bto-principal" style="margin-left:2rem;">Enviar</button>
         </form>
@@ -203,6 +196,5 @@
     </section class="footer">
     </main>
     <script src="js/scroll.js"></script>
-
 </body>
 </html>
