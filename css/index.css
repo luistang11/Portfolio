@@ -33,7 +33,7 @@ body{
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     text-decoration: none;
     color: white;
 }
@@ -67,13 +67,13 @@ ul.show{
 }
 .bordeFoto{
     position: relative;
-    max-width: 230px;
+    max-width: 210px;
 }
 .bordeFoto::before {
     content: "";
     position:absolute;
     inset: -15px;
-    border: 6px solid #000000;
+    border: 5px solid #000000;
     border-top-color: #FEED01;
     border-bottom-color: #FEED01;
     border-radius: 50%;
@@ -122,7 +122,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .ability{
     width: 130px;
     height: 130px;
-    background-color: #ffffff;
+    background-color: transparent;
     margin:0 0 0 15px;
     text-align: center;
     padding: 10px;
@@ -148,12 +148,13 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .lugares{
     margin:0 0 0 20px;
-
+    text-align: center;
     padding: 20px;
 }
 .fotoInstitucion{
     width: 250px;
     height: 120px;
+    border-radius: 30px;
 }
 
 .hobbies{
@@ -175,7 +176,9 @@ width: 680px;
 height: 460px;
 border-radius: 30px;
 }
-
+#descripcion{
+    font-weight: bold;
+}
 .contacto{
     background-color: rgb(27, 149, 158);
     padding: 30px;
@@ -303,11 +306,11 @@ a{
 }
 @media(max-width:952px){
     .titulo{
-        font-size: 20px;
+        font-size: 29px;
         
     }
     .naveg li a{
-        font-size: 9px;
+        font-size: 12px;
     }
 }
 @media(max-width:850px){
@@ -376,12 +379,19 @@ a{
     .nombre{
         width: 240px;
     }
+    .fotoYo{
+        width: 150px;
+        height: 150px;
+    }
+    .bordeFoto{
+        max-width: 170px;
+    }
     .puesto{
         width: 180px;
         margin-left:2rem;
     }
     #sobreContacto{
-        width: 200px;
+        width: 180px;
     }
     .proyectos{
         height: auto;

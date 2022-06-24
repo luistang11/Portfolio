@@ -35,7 +35,8 @@
         <img class="puesto" src="img/abautMe/titulo.png">
         </div>
         <div class="parrafo">
-        <p>Con iniciativa y ganas de superarse. Capacidad de trabajar en equipo y resolución de problemas.
+        <p>Hola! tengo 19 años, de Argentina y quiero ser desarrollador web.
+        Con iniciativa y ganas de superarse. Capacidad de trabajar en equipo y resolución de problemas.
         Gran capacidad de aprendizaje, y aportar a la empresa lo que busca.
         Lograr cada meta que se proponga en la empresa y crecer en mi área profesional. </p>
         </div>
@@ -80,30 +81,34 @@
         <section class="instituciones">
             <div class="lugares">
                 <img class="fotoInstitucion" src="img/estudios/secundaria.jpg">
-                <H2>Escuela Técnica N°7 Dolores Lavalle</H2>
-                <h3>2016-2021</h3>
-                <h3>Técnico en computacion-Graduado</h3>
+                <h2 id="descripcion">Escuela Técnica N°7 Dolores Lavalle</h2>
+                <h3 id="descripcion">2016-2021</h3>
+                <h3 id="descripcion">Técnico en computacion</h3>
             </div>
             <div class="lugares">
                 <img class="fotoInstitucion" src="img/estudios/universidad.jpg">
-                <h2>Universidad tecnológica Nacional de</h2>
-                <h2>Buenos Aires</h2>
-                <h3>Actualidad</h3>
-                <h3>Ingeniería en sistemas-Cursando</h3>
+                <h2 id="descripcion">Universidad Tecnológica Nacional de</h2>
+                <h2 id="descripcion">Buenos Aires</h2>
+                <h3 id="descripcion">Actualidad</h3>
+                <h3 id="descripcion">Ingeniería en sistemas</h3>
             </div>
             <div class="lugares">
                 <img class="fotoInstitucion" src="img/estudios/Alura.jpg">
-                <h2>Alura-ONE Oracle Next Education</h2>
+                <h2 id="descripcion">Alura-ONE Oracle Next Education</h2>
+                <h3 id="descripcion">Actualidad</h3>
+                <h3 id="descripcion">Developer Web Full-Stack</h3>
             </div>
             <div class="lugares">
                 <img class="fotoInstitucion" src="img/estudios/argPrograma.jpg">
-                <h2>Argentina Programa</h2>
-                <h3>Actualidad</h3>
+                <h2 id="descripcion">Argentina Programa</h2>
+                <h3 id="descripcion">Actualidad</h3>
+                <h3 id="descripcion">Javascript,Ruby</h3>
             </div>
             <div class="lugares">
                 <img class="fotoInstitucion" src="img/estudios/aprende programando.png">
-                <h2>Aprendé Programando</h2>
-                <h3>2019</h3>
+                <h2 id="descripcion">Aprendé Programando</h2>
+                <h3 id="descripcion">2019</h3>
+                <h3 id="descripcion">Diseño Web</h3>
             </div>
 
         </section>
@@ -114,18 +119,23 @@
         <section class="listaHobbies">
             <div class="ability">
                 <img id="icono"src="img/icons/cocina.png">
+                <h2 id="descripcion">Cocinar</h2>
             </div>
             <div class="ability">
                 <img id="icono"src="img/icons/musica.png">
+                <h2 id="descripcion">Escuchar música</h2>
             </div>
             <div class="ability">
                 <img id="icono"src="img/icons/gamer.png">
+                <h2 id="descripcion">Videojuegos</h2>
             </div>
             <div class="ability">
                 <img id="icono"src="img/icons/libro.png">
+                <h2 id="descripcion">Leer novelas</h2>
             </div>
             <div class="ability">
                 <img id="icono"src="img/icons/gato.png">
+                <h2 id="descripcion">Jugar con mi gato</h2>
             </div>
         </section>
 
@@ -165,19 +175,19 @@
         <form style="margin: 0 auto; width: 50%; ">
             <div class="grupo">
                 <label for="nombre">Nombre</label>
-                <input id="nombre" name="nombre" type="text">
+                <input id="nombre" name="nombre" type="text" required maxlength="50" title="Máximo 50 caracteres">
             </div>
             <div class="grupo">
                 <label for="email">Correo Electrónico</label>
-                <input id="email" name="email" type="email" placeholder="example@example.com">
+                <input id="email" name="email" type="email" placeholder="example@example.com" required>
             </div>
             <div class="grupo">
                 <label for="asunto">Asunto</label>
-                <input id="asunto" name="asunto" type="text">
+                <input id="asunto" name="asunto" type="text" required maxlength="50" title="Máximo 50 caracteres>
             </div>
             <div class="grupo">
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" type="text" style="height: 4rem; width: 103%; resize: none;"></textarea>
+                <textarea id="mensaje" type="text" style="height: 4rem; width: 103%; resize: none;" required maxlength="300" placeholder="Máximo 300 caracteres"></textarea>
             </div>
             <button id="adicionar-paciente" class="boton bto-principal" style="margin-left:2rem;">Enviar</button>
         </form>
